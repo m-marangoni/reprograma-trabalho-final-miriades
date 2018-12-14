@@ -1,0 +1,163 @@
+/*
+
+  CSS RESET
+
+ */
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+ }
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+#container {
+  width: 100%;
+  background-color: #fff;
+  font-size: 80px;
+}
+
+
+
+
+
+
+  body{
+    min-height: 100vh;
+    font-family: 'IBM Plex Mono', monospace;;
+    height: 100%;
+    background-color:rgb(175, 175, 175);
+   
+    }
+      
+
+.topo{
+position: fixed;
+margin: 0;
+width: 100%;
+color: #fff;
+-webkit-box-shadow: 0px 14px 22px -1px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 14px 22px -1px rgba(0,0,0,0.4);
+box-shadow: 0px 14px 22px -1px rgba(0,0,0,0.4);
+height: 3em;
+background: rgb(85, 85, 85);
+}
+
+
+.rodape{
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    height: 3em;
+    -webkit-box-shadow: 0px -11px 22px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px -11px 22px -1px rgba(0,0,0,0.4);
+    box-shadow: 0px -11px 22px -1px rgba(0,0,0,0.4);
+    background: rgb(85, 85, 85);
+    }
+
+
+ 
+.menu{
+z-index: 1;
+display: flex;
+position: fixed;
+align-items: center;
+justify-content: center;
+}
+
+
+ol {
+  list-style-type: none;
+  width:150px;
+  margin:300px 0 0 50px;
+  flex-direction: column;
+  font-size: 12px;
+}
+li {
+  cursor:pointer;
+  text-indent:-7px;
+  border-left:2px solid black;
+}
+  li:before {
+  content:"\25CF";
+  font-size:20px;
+  vertical-align:middle;
+  color:black;
+}
+  li:hover:before {
+  transition:0.2s ease;
+  color:rgb(250, 37, 186);
+  
+}
+  li a {
+    overflow:hidden;
+    display:inline-block;
+    color:black;
+    text-indent:-100px;
+    width:80px;
+    font-size: 12px;
+    text-decoration:none;
+    padding:5px;
+    transition:0.2s ease;
+    margin:5px 0 0 5px;
+  }
+li:hover a {
+  background-color:rgb(158, 29, 119);
+  color:#fff;
+  text-align:center;
+  text-indent:0;
+}
+
+/* eyes */
+
+.eyes{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye{
+  width: 90px;
+  height: 50px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 100%;
+  border-style: 10px, solid, black;
+  position: relative;
+  overflow: hidden;
+   border-style: solid;
+  border-width: 5px;
+}
+
+.ball{
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+ 
+}
