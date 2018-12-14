@@ -1,34 +1,58 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>CyberFem</title>
-  <meta name="description" content="Hall of Incredible Women">
-  <meta name="Mariana Marangoni" content="Incredible Women">
-  <link rel="stylesheet" href="index.css">
+  <title>Miríades</title>
+  <meta name="description" content="Ficção científica feminista & futuros possíveis">
+  <meta name="Mariana Marangoni" content="CyberFem">
+  <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-  <div class="content">
-    <div class="menu">
-      <ol>
-        <li><a class="one" href="#" title="home">home</a></li>
-        <li><a class="two" href="#" title="Vigilância">Vigilância</a></li>
-        <li><a class="three" href="#" title="Algoritmos">Algoritmos</a></li>
-        <li><a class="four" href="#" title="Informação">Informação</a></li>
-      </ol>
-    </div>            
+  <header class="logo">
+    <img src="./img/logo-miriade-pb.png" alt="logo miriades">
+  </header>
 
-    <div class="eyes">
-      <div class="eye">
-        <div id="ball" class="ball"></div>
+  <main>
+    <nav class="content">
+      <div class="menu">
+        <ol>
+          <li class="one"><a class="one" href="index.html" title="home">Home</a></li>
+          <li class="two"><a class="two" href="sobre.html" title="manifesto">Manifesto</a></li>
+          <li><a class="three" href="livros.html" title="coletanea">Coletânea</a></li>
+          <li><a class="four" href="chat.html" title="chat">Chat</a></li>
+        </ol>
       </div>
-  </div>  
+    </nav>
+    <div>
+      <p class="side-social">Twitter</p>
+    </div>
+    <div class="parallax-wrapper">
+      <div class="layer">
+        <h1 class="home-text">Criando futuros possíveis</h1>
+        <img class="floating-heads" src="./img/head3.png" alt="floating female heads">
+      </div>
+      <div class="layer" data-mouse-parallax="0.1">
+        <img class="floating-heads" src="./img/head2.png" alt="floating female heads">
+      </div>
+      <div class="layer" data-mouse-parallax="0.3">
+        <img class="floating-heads" src="./img/head1.png" alt="floating female heads">
+      </div>
+    </div>
 
 
-  <script type="text/javascript" src="index.js"></script>
+  </main>
+  <footer></footer>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/parallax.js"></script>
+
 </body>
+
 </html>

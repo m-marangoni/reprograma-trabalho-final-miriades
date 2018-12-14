@@ -1,0 +1,325 @@
+/* https://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.45;
+  background-color: #000000;
+}
+
+.chatbot__overview {
+  background-image: url("../img/ada.jpg");
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: space-between;
+  min-height: 80vh;
+  max-height: 80vh;
+  margin: 0 auto;
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.chatlist {
+  font-size: 1em;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 35em;
+  max-height: 75vh;
+  margin: 0 auto;
+  margin-top: 10em;
+}
+.chatlist .userInput, .chatlist .bot__output {
+  padding: 0.85em;
+  margin: 0.5em;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(119, 32, 93);
+}
+.chatlist .userInput {
+  text-transform: lowercase;
+  box-shadow: 1px 1px 2px rgb(36, 36, 36);
+  border-top: 4px solid rgb(119, 32, 93);
+}
+
+.chatlist .bot__output {
+  align-self: flex-start;
+  box-shadow: -1px 1px 2px rgb(36, 36, 36);
+  border-top: 4px solid rgb(119, 32, 93);
+}
+ 
+.chatlist .bot__output:last-child {
+  display: none;
+}
+.chatlist .bot__command {
+  color: #f5f5f5;
+  color: rgb(119, 32, 93);
+  font-weight: 400;
+  padding: 0.1em;
+}
+.chatlist .bot__output:nth-child(1) {
+  animation-delay: 600ms;
+  animation-play-state: running;
+}
+.chatlist .bot__output:nth-child(2) {
+  animation-delay: 1200ms;
+  animation-play-state: running;
+}
+.chatlist .bot__output:nth-child(3) {
+  animation-delay: 1800ms;
+  animation-play-state: running;
+}
+.chatlist .bot__output--standard:last-child {
+  display: block;
+}
+.chatlist .bot__output--failed {
+  display: block !important;
+}
+.chatlist .bot__output--second-sentence {
+  display: block;
+}
+.chatlist .bot__outputImage {
+  max-width: 16em;
+  height: 12em;
+}
+
+.block--background {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+}
+
+#chatform {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 35em;
+  margin: 0 auto;
+  padding-top: 1em;
+  font-size: 1em;
+  font-family: "IBM Plex Mono" monospace; 
+}
+@media screen and (max-width: 29em) {
+  #chatform {
+    width: 90%;
+  }
+}
+
+.chatbox-area {
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+}
+
+textarea[name="chatbox"] {
+  resize: none;
+  border: 2px solid rgb(119, 32, 93);
+  border-right: 0;
+  width: 70%;
+  background-color: transparent;
+  color: rgb(236, 236, 236);
+  height: 3em;
+  margin: 0;
+  padding: 0.75em;
+  font-size: 1em;
+}
+textarea[name="chatbox"]:focus {
+  outline: none;
+  border: 2px solid rgb(119, 32, 93);
+}
+
+
+
+input[type="submit"] {
+  border: 0;
+  width: 25%;
+  margin: 0;
+  background-color: rgb(119, 32, 93);
+  color: #fff;
+  border: 2px solid  rgb(119, 32, 93);
+  border-left: 0;
+  font-size: 1em;
+  transition: 200ms all ease-in;
+}
+input[type="submit"]:hover {
+  background-color: rgb(196, 60, 155);
+  border-color:  rgb(196, 60, 155);
+  color: #fff;
+}
+
+.input__nested-list {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 0.5em;
+}
+.input__nested-list:first-child {
+  padding-top: 1em;
+}
+
+.input__nested-link {
+  color:  rgb(119, 32, 93);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(119, 32, 93);
+}
+
+
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  .logo{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1em;
+    z-index: 999;
+  
+  }
+  .side-social{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    font-family: "Rakkas";
+    color: #FFF;
+    margin: 400px 50px 0 0;
+    flex-direction: column;
+    font-size: 2em;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  
+  
+  
+  
+  
+  .menu{
+    margin-top: 4em;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    
+    ol {
+      list-style-type: none;
+      width:150px;
+      margin:300px 0 0 50px;
+      flex-direction: column;
+      font-size: 14px;
+    }
+    li {
+      cursor:pointer;
+      text-indent:-7px;
+      border-left:2px solid rgb(255, 255, 255);
+    }
+      li:before {
+      content:"\25CF";
+      font-size:20px;
+      vertical-align:middle;
+      color:rgb(255, 255, 255);
+    }
+      li:hover:before {
+      transition:0.2s ease;
+      color:rgb(255, 255, 255);
+      
+    }
+      li a {
+        overflow:hidden;
+        display:inline-block;
+        color:rgb(255, 255, 255);
+        text-indent:-100px;
+        width:80px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 12px;
+        text-decoration:none;
+        padding:5px;
+        transition:0.2s ease;
+        margin:5px 0 0 5px;
+      }
+  
+  
+    li:hover a {
+      font-weight: 800;
+      background-color: #9b67a8;
+      color:rgb(22, 22, 22);
+      text-align:center;
+      text-indent:0;
+    }
+    

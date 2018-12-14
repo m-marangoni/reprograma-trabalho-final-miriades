@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Miríades</title>
+  <meta name="description" content="Ficção científica feminista & futuros possíveis">
+  <meta name="Mariana Marangoni" content="CyberFem">
+  <link rel="stylesheet" href="./css/chat.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header class="logo">
+    <img src="./img/logo-miriade-pb.png" alt="logo miriades">
+  </header>
+  <nav class="content">
+    <div class="menu">
+      <ol>
+        <li class="one"><a class="one" href="index.html" title="home">Home</a></li>
+        <li class="two"><a class="two" href="sobre.html" title="manifesto">Manifesto</a></li>
+        <li><a class="three" href="livros.html" title="coletanea">Coletânea</a></li>
+        <li><a class="four" href="chat.html" title="chat">Sobre</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="page__main">
+    <div class="block--background">
+      <div class="chatbot__overview">
+        <ul class="chatlist">
+          <li class="bot__output bot__output--standard">Olá, humana, eu sou a Ada</li>
+          <li class="bot__output bot__output--standard">Sou uma Inteligência Artificial e estou aqui para ajudá-la a
+            encontrar livros de FC escrito por mulheres.</li>
+          <li class="bot__output bot__output--standard">
+            <span class="bot__output--second-sentence">Qual desses temas você tem mais interesse em ler?</span>
+            <ul>
+              <li class="input__nested-list">Sobre <span class="bot__command">gênero</span></li>
+              <li class="input__nested-list">Sobre<span class="bot__command">vigilância</span></li>
+              <li class="input__nested-list">Sobre<span class="bot__command">distopias</span> </li>
+              <li class="input__nested-list">Sobre <span class="bot__command">viagem no tempo</span></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="chatbox-area">
+        <form action="" id="chatform">
+          <textarea placeholder="Fale comigo!" class="chatbox" name="chatbox" resize="none" minlength="3"></textarea>
+          <input class="submit-button" type="submit" value="send">
+        </form>
+      </div>
+      <div class="block--background"></div>
+
+  </main>
+  <script type="text/javascript" src="./js/chat.js"></script>
+
+</body>
+
+</html>
