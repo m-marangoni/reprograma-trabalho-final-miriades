@@ -71,11 +71,11 @@ body {
 
 .chatbot__overview {
   background-image: url("../img/ada.jpg");
+  background-size: 100vw;
   display: flex;
-  flex-flow: row nowrap;
-  align-content: space-between;
+  align-content: center;
   min-height: 80vh;
-  max-height: 80vh;
+  max-height: 100vh;
   margin: 0 auto;
   padding: 1em;
   padding-bottom: 0;
